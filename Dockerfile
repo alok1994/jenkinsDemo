@@ -3,7 +3,7 @@ FROM ubuntu
 
 # set maintainer
 #LABEL maintainer "miiro@getintodevops.com"
-RUN apt-get install net-tools
+RUN apt-get update
 # set a health check
 HEALTHCHECK --interval=5s \
             --timeout=5s \
